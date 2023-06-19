@@ -84,7 +84,7 @@ header{
 .main_visual{
     border: 1px solid #fff;
     height: 820px;
-    background-image: url("image/main.png");
+    background-image: url("main.png");
     background-repeat: no-repeat;
     background-color: #fff;
 }
