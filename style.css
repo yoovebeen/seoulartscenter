@@ -1,0 +1,540 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+#wrap{
+    position: relative;
+    min-height: 100%;
+}
+
+/*header*/
+header{
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    padding-left: 100px;
+}
+
+.gnb{
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+}
+
+.gnb > a{
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #191919;
+    padding: 0 30px;
+    line-height: 40px;
+    margin-top: 2px;
+}
+
+.gnb > a:link{
+    color: #191919;
+}
+.gnb > a:visited{
+    color: #191919;
+}
+.gnb > a:hover{
+    font-weight: 600;
+    background-color: #fff1f1;
+    color: #000000;
+    border-radius: 8px;
+}
+.gnb > a:active{
+    font-weight: 600;
+    color: #191919;
+}
+
+.util{
+    margin-top: 2px;
+    margin-right: 100px;
+    display: flex;
+}
+
+.util > a{
+    padding: 0 10px;
+}
+
+
+/*contents*/
+.contents{
+    margin: 0 auto;
+    width: 1200px;
+
+}
+
+.main_visual{
+    border: 1px solid #fff;
+    height: 820px;
+    background-image: url("image/main.png");
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.main_info{
+    margin: 0 100px;
+}
+
+.main_info > h1{
+    margin-bottom: 32px;
+    line-height: 64px;
+    font-size: 64px;
+    color: #fff;
+}
+.main_info > h2{
+    margin-top: 276px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 32px;
+    color: #fff;
+}
+.main_info > h3{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.main_info > a{
+    margin-top: 32px;
+    margin-right: 4px;
+
+    font-size: 20px;
+    color: #191919;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #191919;
+    padding-top: 16px;
+    background-color: #fff;
+
+
+    display: inline-block;
+    width: 180px;
+    height: 60px;
+
+}
+.main_info > a:first-of-type{
+    background-color: #eb203e;
+    color: #fff;
+}
+
+
+
+.main_poster{
+    height: 200px;
+    background-color: #19191960;
+
+    margin-top: 48px;
+}
+.main_list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 136px;
+
+}
+
+.main_list > a > img.current{
+    margin-bottom: 20px;
+
+}
+
+.main_list > a > img:not(.current){
+    opacity: 0.5;
+    transition: opacity 0.5s linear;
+}
+
+.main_list > a > img:hover:not(.current){
+    opacity: 1;
+    transform: scale(1.1,1.1);
+}
+.main_list > a > img:active:not(.current){
+    opacity: 1;
+    transform: scale(1.1,1.1);
+}
+
+.main_menu{
+    width: 100%;
+    height: 287px;
+    display: flex;
+}
+
+.btn{
+    width: 160px;
+    height: 100%;
+    display: block;
+}
+
+.btn > a{
+    margin-top: 64px;
+    margin-left: 24px;
+    display: block;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 48px;
+    background-color: #000;
+}
+
+.btn > a:hover{
+    background-color: #eb203e;
+}
+
+.btn > a > img{
+    padding-top: 21px;
+}
+
+.btn > p{
+    display: block;
+    text-align: center;
+    margin-top: 24px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.banner{
+    display: block;
+    text-align: center;
+}
+
+.banner > a > img{
+    border-radius: 8px;
+    border: 1px solid #dfdede;
+}
+
+
+.list_exhibition{
+    width: 100%;
+    height: 680px;
+
+}
+
+.list{
+    margin: 64px 460px 0px 460px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.list > li{
+    list-style: none;
+}
+
+li > a{
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 600;
+    color: #191919;
+}
+
+li > a:link{
+    color: #dedede;
+}
+li > a:visited{
+    color: #dedede;
+}
+li > a:hover{
+    font-weight: 600;
+    color: #000000;
+}
+li > a:active{
+    font-weight: 600;
+    color: #191919;
+}
+
+.more{
+    margin: 4px 0 24px 1088px;
+
+}
+
+.more > a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+.exhibition{
+    display: flex;
+}
+.exhibition_info{
+    width: 284px;
+    height: 100%;
+    margin: 12px 8px;
+    display: block;
+}
+
+.exhibition_info > a > img{
+    border: 1px solid #dfdede;
+}
+
+.exhibition_info > h2{
+    margin-top: 24px;
+    color: #191919;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.exhibition_info > p{
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #777777;
+}
+
+.notice{
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+.subtitle-noti > h2{
+    display: block;
+    font-size: 28px;
+}
+
+.notice-more{
+    display: flex;
+}
+
+.noticeframe{
+    display: inline-block;
+}
+
+.notice-more > a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    margin: 4px 0 8px 1060px;
+}
+
+.noti{
+    width: 960px;
+    margin-top: 32px;
+    margin-left: 232px;
+
+}
+
+.noti > p{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.noti > p > span{
+    font-size: 16px;
+    color: #777777;
+    margin: 2px 0;
+}
+
+
+.subtitle{
+    margin-top: 60px;
+    margin-bottom: 48px;
+    display: block;
+    text-align: center;
+}
+
+.subtitle > h2{
+    font-size: 28px;
+
+}
+
+.ticket_open{
+    width: 100%;
+    height: 600px;
+
+}
+
+.ticketframe{
+    width: 100%;
+    height: 440px;
+    display: flex;
+    align-content: start;
+    justify-content: space-between;
+}
+
+.ticket{
+    width: 240px;
+    display: block;
+    text-align: center;
+}
+
+.ticket > p {
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sub_main{
+    height: 1040px;
+}
+
+.sub_main > h2{
+    color: #191919;
+    font-size: 32px;
+    margin: 32px 12px;
+}
+
+.sub_main > img{
+    margin: 24px 12px;
+}
+
+.sub_main > h3{
+    color: #777777;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 12px 24px 12px;
+    line-height: 22px;
+}
+
+
+.sub_main2{
+    height: 780px;
+}
+.sub_main2 > h2{
+    color: #191919;
+    font-size: 32px;
+    margin: 32px 12px;
+}
+.sub_main2 > h3{
+    color: #777777;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 12px;
+    margin-bottom: 24px;
+}
+.sub_main2 > img{
+    margin: 24px 12px;
+}
+
+.sub_title > h2{
+    font-size: 28px;
+}
+.sub_con{
+    margin-top: 36px;
+    height: 440px;
+    display: flex;
+}
+
+.sub_coninfo{
+    margin: 36px 24px;
+}
+
+.sub_coninfo > h2{
+    font-size: 24px;
+    margin: 8px 0;
+}
+.sub_coninfo > h3{
+    color: #191919;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.prog-title{
+    margin-top: 40px;
+    color: #191919;
+}
+.sub_coninfo > h4{
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #484848;
+}
+.sub_coninfo > p{
+    color: #646464;
+
+}
+
+.sub_30frame{
+    height: 400px;
+    padding: 0 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub_30info > h4{
+    margin-top: 16px;
+    font-size: 16px;
+    color: #191919;
+
+}
+.sub_30info > p{
+    margin-top: 4px;
+    color: #484848;
+}
+.sub_30info > a > img{
+    border: 1px solid #dfdede;
+}
+/*footer*/
+footer{
+    width: 100%;
+    height: 220px;
+    background-color: #191919;
+    color: #aeaeae;
+    bottom: 0;
+    position : relative;
+
+    display: block;
+}
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.foot > img{
+    margin-left: 80px;
+    margin-top: 40px;
+}
+.sns{
+    width: 200px;
+    display: flex;
+}
+.sns > a > img{
+    margin-top: 24px;
+    margin-right: 8px;
+}
+
+.foot > .txtbox1{
+    display: flex;
+    margin-right: 400px;
+    margin-top: 20px;
+}
+
+.txtbox1 > a{
+    text-decoration: none;
+    color: #aeaeae;
+    padding: 0 24px;
+    font-weight: 500;
+}
+
+.txtframe{
+    display: block;
+    margin-left: 368px;
+}
+.txtbox2{
+    display: inline-block;
+}
+.txtbox3{
+    margin-top: 4px;
+    display: block;
+}
